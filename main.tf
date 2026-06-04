@@ -43,3 +43,9 @@ resource "aws_instance" "app_server" {
     Name = var.instance_name
   }
 }
+
+action "aws_ec2_stop_instance" "app_server" {
+  config {
+    instance_id = aws_instance.app_server.id
+  }
+}
