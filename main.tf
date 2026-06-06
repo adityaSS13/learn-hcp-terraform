@@ -44,8 +44,9 @@ resource "aws_instance" "app_server" {
   }
 }
 
-
+/*
 resource "aws_ec2_instance_state" "example_state" {
   instance_id = aws_instance.app_server.id
   state       = "stopped"  # Change to "running" to start the instance
 }
+*/
